@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchFormComponent implements OnInit {
 
-  constructor() { }
+  public githubUserQuery!:any;
+
+  constructor() {
+
+   }
 
   ngOnInit(): void {
   }
