@@ -1,9 +1,11 @@
 #meja {
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     margin: auto;
+    padding: 12px; */
     /* height: 60vh; */
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 8px;
 }

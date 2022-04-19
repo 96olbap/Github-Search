@@ -8,6 +8,32 @@ import { environment } from 'src/environments/environment';
 })
 export class UserService {
 
-  
-  constructor() { }
+  username:any;
+  user!:User;
+  url = 'https://api.github.com/users';
+
+ constructor(public http: HttpClient) { 
+    this.username = "96olbap";
+    this.user = new User("","","", 0, 0,"","")
+
+  }
+  fetchUserInfo(){
+    let promise = new Promise((resolve,reject) => {
+      this.http.get<any>(this.url + this.username + "?access_token'=" + environment.apiToken).toPromise().then(
+        response => {
+          this.user.image = response.avatar_url
+          this.user.username = response.name
+          this.user.bio = response.bio
+          this.user.followers = response.followers
+          this.user.following = response.following
+          this.user.location = response.location
+          this.user.twitter = response.twitter_username
+          resolve(console.log("User can be fetched"))
+        }, error =>{
+         reject(console.log("User cant be fetched")) 
+        }
+      )
+    })
+    return promise
+  }
 }
