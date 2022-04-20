@@ -29,4 +29,5 @@ a#view.btn.ms-5 {
 
 a#view.btn.ms-5:hover {
     background-color: #FBE790;
+    box-shadow: 6px 6px 3px rgb(4, 4, 30);
 }
