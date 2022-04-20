@@ -9,3 +9,24 @@
     /* width: fit-content; */
     border-radius: 8px;
 }
+
+.wrapper {
+    border: 1px solid rgb(4, 4, 30);
+}
+
+#userProfile {
+    margin-top: 3vh;
+    border-radius: 5px;
+    background-color: #ECF9FA;
+    box-shadow: 10px 10px 5px rgb(53, 66, 71);
+}
+
+a#view.btn.ms-5 {
+    border: solid black 2px;
+    font-weight: 150;
+    color: rgb(4, 4, 30);
+}
+
+a#view.btn.ms-5:hover {
+    background-color: #FBE790;
+}
