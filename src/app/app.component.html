@@ -1,4 +1,15 @@
-<app-landing-page></app-landing-page>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="landingPage"><b>GitHub-Search</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" routerLink="landingPage" routerLinkActive='active'><span class="sr-only">GitHub profile</span></a>
+            <a class="nav-item nav-link" routerLink="/search-form" routerLinkActive='active'>Search</a>
+        </div>
+    </div>
+</nav>
 
 <div class="container container-fluid">
     <div class="card mt-4 p-4" id="meja">
@@ -7,6 +18,7 @@
         </div>
         <div class="card-body">
             <router-outlet></router-outlet>
+            <!-- <app-search-form></app-search-form> -->
         </div>
     </div>
 </div>

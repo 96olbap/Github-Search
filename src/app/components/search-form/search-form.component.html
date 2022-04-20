@@ -1,13 +1,13 @@
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <form avtion="submit" #searchForm="ngForm" (ngSubmit)="searchUser()">
-            <input [(ngModel)]="githubUserQuery" class="form-control me-2" type="search" placeholder="Find User" aria-label="Search" required>
+        <form action="submit" #searchForm="ngForm" (ngSubmit)="searchUser()">
+            <input [(ngModel)]="githubUserQuery" name="githubUserQuery" class="form-control me-2" type="search" placeholder="Find User" aria-label="Search" required>
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </div>
 </nav>
 <br>
-<section class="container container-fluid">
+<!-- <section class="container container-fluid">
     <div class="col-md-3 mt-4">
         <div class="card" id="profile">
             <img [src]="repoData.image" class="card-img-top" alt="">
@@ -24,4 +24,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->

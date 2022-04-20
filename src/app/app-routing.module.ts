@@ -5,8 +5,10 @@ import { RepositoriesComponent } from './components/repositories/repositories.co
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 const routes: Routes = [
-  {path: 'search-form', component: SearchFormComponent},
-  {path: 'landingPage', component: LandingPageComponent}
+  {path: '', redirectTo: 'search-form', pathMatch:'full'},
+  {path: 'landingPage', component: LandingPageComponent},
+  {path: 'search-form', component: SearchFormComponent}
+
 ];
 
 @NgModule({

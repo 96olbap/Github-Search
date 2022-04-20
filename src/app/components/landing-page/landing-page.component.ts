@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  searchName:any;
+
+  constructor(private route:ActivatedRoute,) { }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe((params:any)=>{
+      this.searchName = params.data;
+    })
   }
 
 }

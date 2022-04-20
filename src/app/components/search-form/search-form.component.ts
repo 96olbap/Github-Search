@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Form } from 'src/app/form';
-import { FormService } from 'src/app/form.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-search-form',
@@ -12,18 +12,13 @@ export class SearchFormComponent implements OnInit {
   public githubUserQuery!:any;
   public repoData!:any;
 
-  constructor(private formService: FormService) {
+  constructor(private router: Router) {
 
    }
 
-  ngOnInit(): void {
-    this.formService.username = this.githubUserQuery;
-    this.formService.fetchUser();
-    this.repoData = this.formService.user;
-  }
-  searchUser(){
-    this.formService.username = this.githubUserQuery;
-    this.formService.fetchUser
-  }
+  ngOnInit(): void {}
 
+  searchUser(){
+    this.router.navigate(['landingPage'], {queryParams:{data:this.githubUserQuery}})
+  }
 }
