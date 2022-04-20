@@ -14,7 +14,7 @@ export class RepoService {
 
   constructor(private http:HttpClient) { 
   }
-  fetchRepoInfo(searchName:any){
+  fetchRepoInfo(searchName:any): Promise<unknown>{
     console.log(searchName);
     let promise = new Promise((resolve,reject) => {
       this.http.get<any>(this.url + searchName + "/repos" + "?access_token'=" + environment.apiToken).toPromise().then(
