@@ -6,7 +6,6 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 
 const routes: Routes = [
   {path: 'search-form', component: SearchFormComponent},
-  {path: 'repositories', component: RepositoriesComponent},
   {path: 'landingPage', component: LandingPageComponent}
 ];
 

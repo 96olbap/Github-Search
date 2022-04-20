@@ -41,10 +41,11 @@ export class FormService {
   userRepos: any[] = [];
   jango!: any;
   repoInfo = new foundRepos;
+  url = "https://api.github.com/users/repos"
   
   fetchRepos(){
     let newRepos = new Promise((resolve, reject)=>{
-      this.http.get<any>(this.link + this.username + '/repos').toPromise().then(
+      this.http.get<any>(this.url + this.username + '/repos').toPromise().then(
         response =>{
           response.forEach((response:any) =>{
             this.repoInfo = new foundRepos();

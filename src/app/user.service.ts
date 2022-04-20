@@ -10,7 +10,7 @@ export class UserService {
 
   username:any;
   user!:User;
-  url = 'https://api.github.com/users';
+  url = 'https://api.github.com/users/96olbap';
 
  constructor(public http: HttpClient) { 
     this.username = "96olbap";
