@@ -16,7 +16,7 @@ export class UserService {
 
   }
   fetchUserInfo(searchName:any){
-    console.log(searchName);
+
     let promise = new Promise((resolve,reject) => {
       this.http.get<any>(this.url + searchName + "?access_token'=" + environment.apiToken).toPromise().then(
         response => {
