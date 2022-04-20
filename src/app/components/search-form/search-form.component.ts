@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from 'src/app/form';
 
 @Component({
   selector: 'app-search-form',
@@ -8,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class SearchFormComponent implements OnInit {
 
   public githubUserQuery!:any;
+  public repoData!:any;
 
   constructor() {
 
    }
 
   ngOnInit(): void {
+  }
+  searchUser(){
+
   }
 
 }

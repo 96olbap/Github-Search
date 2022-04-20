@@ -1,43 +1,27 @@
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <form #searchForm="ngForm">
+        <form #searchForm="ngForm" (ngSubmit)="searchUser()">
             <input [(ngModel)]="githubUserQuery" class="form-control me-2" type="search" placeholder="Find User" aria-label="Search" required>
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </div>
 </nav>
 
-<!-- <section class="container container-fluid">
-    <h4>Search other github users</h4>
-    <form #searchForm="ngForm" (ngSubmit)="searchUser()">
-        <div class="form-group">
-            <label for="name">Username</label>
-        </div>
-        <div class="row form-group">   
-            <input class="col-md-8" [(ngModel)]="githubUserQuery" name="newusername" type="text" placeholder="Github username" required>
-            <div class="col-md-2">
-                <button type="submit" class="btn search-btn">Search</button>
-            </div>
-        </div>
-    </form>
-</section>
-
-
 <section class="container container-fluid">
     <div class="col-md-3 mt-4">
         <div class="card" id="profile">
-            <img [src]="information.image" class="card-img-top" alt="">
+            <img [src]="repoData.image" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-title">{{information.username}}</h5>
-              <p class="card-text">{{information.bio}}</p>
-              <div class="row">
-                <i class="fa-light fa-user-group"></i>
-                  <div class="col">{{information.followers}} followers</div>
-                  <div class="col">{{information.following}} following</div>
-              </div>
-              <p class="card-text">{{information.location}}</p>
-              <p class="card-text">{{information.twitter}}</p>
+                <h5 class="card-title">{{repoData.username}}</h5>
+                <p class="card-text">{{repoData.bio}}</p>
+                <div class="row">
+                    <i class="fa-light fa-user-group"></i>
+                    <div class="col">{{repoData.followers}} followers</div>
+                    <div class="col">{{repoData.following}} following</div>
+                </div>
+                <p class="card-text">{{repoData.location}}</p>
+                <p class="card-text">{{repoData.twitter}}</p>
             </div>
-          </div>
+        </div>
     </div>
 </section> -->
