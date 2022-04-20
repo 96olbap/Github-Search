@@ -15,10 +15,19 @@
 }
 
 #userProfile {
-    margin-top: 3vh;
     border-radius: 5px;
     background-color: #ECF9FA;
     box-shadow: 10px 10px 5px rgb(53, 66, 71);
+    /* float: left; */
+    margin: 3vh 10px 10px 0;
+}
+
+#userRepositories {
+    background-color: #CFE1E1;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(53, 66, 71);
+    margin: 3vh 10px 10px 0;
+    /* padding: 3px; */
 }
 
 a#view.btn.ms-5 {
