@@ -30,6 +30,19 @@
     /* padding: 3px; */
 }
 
+.kadi {
+    background-color: #6E9495;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 250px;
+    border: border-box;
+}
+
+.kadi:hover {
+    box-shadow: 10px 10px 5px rgb(53, 66, 71);
+}
+
 a#view.btn.ms-5 {
     border: solid black 2px;
     font-weight: 150;
