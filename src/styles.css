@@ -5,9 +5,22 @@
     align-content: center;
     margin: auto;
     padding: 12px; */
-    /* height: 60vh; */
-    /* width: fit-content; */
+    display: flex;
+    -ms-flex-align: center;
+    height: 60vh;
+    width: fit-content;
     border-radius: 8px;
+    background-color: rgb(208, 150, 80);
+}
+
+#ingiza {
+    padding: 5px;
+    margin-bottom: 10px;
+    background: none;
+    color: #171a1a;
+    display: block;
+    justify-content: center;
+    width: 40vw;
 }
 
 .wrapper {
@@ -31,7 +44,7 @@
 }
 
 .kadi {
-    background-color: #6E9495;
+    background-color: #CFE1E1;
     display: flex;
     justify-content: center;
     width: 350px;
@@ -40,7 +53,9 @@
 }
 
 .kadi:hover {
-    box-shadow: 10px 10px 5px rgb(53, 66, 71);
+    background-color: #6E9495;
+    transition: background-color 1s ease-out 50ms;
+    display: flexbox;
 }
 
 a#view.btn.ms-5 {
@@ -53,3 +68,6 @@ a#view.btn.ms-5:hover {
     background-color: #FBE790;
     box-shadow: 6px 6px 3px rgb(4, 4, 30);
 }
+
+
+/* #6E9495 */

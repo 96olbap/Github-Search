@@ -1,12 +1,13 @@
-<nav class="navbar navbar-light bg-light">
+<nav class="searchForm">
+    <h4 class="text-center">Welcome to GitHub-Search. <br> Enter a gutHub username below to search for a user and their repositories.</h4>
     <div class="container-fluid">
         <form action="submit" #searchForm="ngForm" (ngSubmit)="searchUser()">
-            <input [(ngModel)]="githubUserQuery" name="githubUserQuery" class="form-control me-2" type="search" placeholder="Find User" aria-label="Search" required>
+            <input [(ngModel)]="githubUserQuery" name="githubUserQuery" id="ingiza" class="form-control me-2" type="search" placeholder="Find User" aria-label="Search" required>
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
     </div>
 </nav>
-<br>
+
 <!-- <section class="container container-fluid">
     <div class="col-md-3 mt-4">
         <div class="card" id="profile">
@@ -24,4 +25,7 @@
             </div>
         </div>
     </div>
+
+navbar navbar-light bg-light
+
 </section> -->
