@@ -9,6 +9,8 @@ import { SearchFormComponent } from './components/search-form/search-form.compon
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { HighlightDirective } from './highlight.directive';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     SearchFormComponent,
     UserDetailsComponent,
     RepositoriesComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    HighlightDirective,
+    DatePipe
   ],
   imports: [
     BrowserModule,
