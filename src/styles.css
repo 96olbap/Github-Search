@@ -5,12 +5,20 @@
     align-content: center;
     margin: auto;
     padding: 12px; */
-    display: flex;
-    -ms-flex-align: center;
+    box-sizing: border-box;
     height: 60vh;
     width: fit-content;
     border-radius: 8px;
     background-color: rgb(208, 150, 80);
+}
+
+.searchForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchForm.frm {
+    justify-content: center;
 }
 
 #ingiza {
